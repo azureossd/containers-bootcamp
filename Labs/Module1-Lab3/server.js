@@ -5,7 +5,7 @@ var os = require("os");
 
 app.get('/', function (req, res) {
   var response = {
-    "Message": "My nodejs container running...",
+    "Message": "My nodejs container is running...",
     "Hostname": os.hostname,
     "NodeJS version": process.version,
     "UserInfo": os.userInfo(),
