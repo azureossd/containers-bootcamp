@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RCZ8ANiGbW/hk/2Aa9CIuEEtPIzCVIFLZk6BPkPh7sFonp40yWqcL47zqQ7M2HO4zKlbNoo/a1Zn8lutWyS2ww==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\edisga\\source\\repos\\dotnetcore-sample\\dotnetcore-sample.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\edisga\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512"
+  ],
+  "logs": []
+}
