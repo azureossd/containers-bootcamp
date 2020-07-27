@@ -1,6 +1,8 @@
 FROM openjdk:11.0.8-jre
 
-WORKDIR /home/site/wwwroot
+RUN mkdir /app
+
+WORKDIR /app
 
 COPY helloworld.jar .
 

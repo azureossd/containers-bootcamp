@@ -3,9 +3,12 @@ FROM ruby:2.6.2
 ARG RACK_ENV=production
 
 RUN apt-get update
+
 RUN apt-get install -y build-essential
 
-WORKDIR /home/site/wwwroot
+RUN mkdir /app
+
+WORKDIR /app
 
 COPY Gemfile Gemfile.lock ./
 

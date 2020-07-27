@@ -1,6 +1,8 @@
 FROM python:3.8.2
 
-WORKDIR /home/site/wwwroot
+RUN mkdir /app
+
+WORKDIR /app
 
 COPY requirements.txt .
 

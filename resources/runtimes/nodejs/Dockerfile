@@ -1,6 +1,8 @@
 FROM node:12.18
 
-WORKDIR /home/site/wwwwroot
+RUN mkdir /app
+
+WORKDIR /app
 
 ADD package.json .
 
