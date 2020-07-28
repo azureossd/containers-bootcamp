@@ -1,0 +1,21 @@
+version: '3'
+services:
+  node-client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    environment:
+      - server_url=http://node-server:3001
+    ports:
+      - '3000:3000'
+      - '2222:2222'
+    container_name: node-client
+  node-server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - '3001:3001'
+    volumes:
+      - c:/data:/data
+    container_name: node-server

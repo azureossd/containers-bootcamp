@@ -8,13 +8,13 @@ RUN apt-get update && apt-get install -y openssh-server && echo "root:Docker!" |
 
 ADD package.json .
 
+RUN npm install
+
 COPY sshd_config /etc/ssh/
 
 COPY entrypoint.sh /usr/local/bin/
 
 RUN chmod +x /usr/local/bin/entrypoint.sh
-
-RUN npm install
 
 COPY . .
 
