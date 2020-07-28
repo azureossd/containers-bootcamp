@@ -14,5 +14,3 @@ services:
     image: edisga/nodejs-server:01
     ports:
       - "3001:3001"
-    volumes:
-      - c:/data:/data
