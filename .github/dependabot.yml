@@ -13,3 +13,7 @@ updates:
     directory: "/resources/runtimes/dotnetcore/code" # Location of package manifests
     schedule:
       interval: "weekly" 
+  - package-ecosystem: "maven" # Resources Java
+    directory: "/resources/runtimes/java/code"
+    schedule:
+      interval: "weekly"
