@@ -21,5 +21,14 @@ updates:
     directory: "/resources/runtimes/nodejs"
     schedule:
       interval: "weekly"
+  - package-ecosystem: "docker" # Resources - Python
+    directory: "/resources/runtimes/python"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pip" # Resources - Python
+    directory: "/resources/runtimes/python"
+    schedule:
+      interval: "weekly"
+
 
  
