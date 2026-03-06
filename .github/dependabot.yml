@@ -9,3 +9,7 @@ updates:
     directory: "/resources/runtimes/dotnetcore" # Location of package manifests
     schedule:
       interval: "weekly" 
+  - package-ecosystem: "dotnet-sdk" # See documentation for possible values
+    directory: "/resources/runtimes/dotnetcore/code" # Location of package manifests
+    schedule:
+      interval: "weekly" 
