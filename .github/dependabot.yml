@@ -21,6 +21,14 @@ updates:
     directory: "/resources/runtimes/nodejs"
     schedule:
       interval: "weekly"
+  - package-ecosystem: "docker" # Resources - PHP
+    directory: "/resources/runtimes/php"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "composer" # Resources - PHP
+    directory: "/resources/runtimes/php/code"
+    schedule:
+      interval: "weekly"
   - package-ecosystem: "docker" # Resources - Python
     directory: "/resources/runtimes/python"
     schedule:
