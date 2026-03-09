@@ -15,7 +15,7 @@ type App struct {
 
 func main() {
     http.HandleFunc("/", MainServer)
-    http.ListenAndServe(":8080", nil)
+    http.ListenAndServe("0.0.0.0:8080", nil)
 }
 
 func MainServer(w http.ResponseWriter, r *http.Request) {
