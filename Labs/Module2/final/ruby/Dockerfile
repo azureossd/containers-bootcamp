@@ -1,4 +1,4 @@
-FROM ruby:2.6.2
+FROM ruby:4.0.0
 
 ARG RACK_ENV=production
 
