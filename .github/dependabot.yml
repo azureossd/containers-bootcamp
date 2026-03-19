@@ -5,38 +5,157 @@
 
 version: 2
 updates:
-  - package-ecosystem: "docker" # Resources - Dotnet
-    directory: "/resources/runtimes/dotnetcore" # Location of package manifests
-    schedule:
-      interval: "weekly" 
-  - package-ecosystem: "maven" # Resources - Java
-    directory: "/resources/runtimes/java/code"
+  - package-ecosystem: "bundler"
+    directory: "/Labs/Module2/final/ruby"
     schedule:
       interval: "weekly"
-  - package-ecosystem: "docker" # Resources - NodeJS
-    directory: "/resources/runtimes/nodejs"
+
+  - package-ecosystem: "bundler"
+    directory: "/resources/runtimes/ruby"
     schedule:
       interval: "weekly"
-  - package-ecosystem: "npm" # Resources - NodeJS
-    directory: "/resources/runtimes/nodejs"
+
+  - package-ecosystem: "composer"
+    directory: "/Labs/Module2/final/php/code"
     schedule:
       interval: "weekly"
-  - package-ecosystem: "docker" # Resources - PHP
-    directory: "/resources/runtimes/php"
-    schedule:
-      interval: "weekly"
-  - package-ecosystem: "composer" # Resources - PHP
+
+  - package-ecosystem: "composer"
     directory: "/resources/runtimes/php/code"
     schedule:
       interval: "weekly"
-  - package-ecosystem: "docker" # Resources - Python
-    directory: "/resources/runtimes/python"
+
+  - package-ecosystem: "docker"
+    directory: "/Labs/Module2/final/dotnetcore"
     schedule:
       interval: "weekly"
-  - package-ecosystem: "pip" # Resources - Python
+
+  - package-ecosystem: "docker"
+    directory: "/Labs/Module2/final/go"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
+    directory: "/Labs/Module2/final/java/docker"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
+    directory: "/Labs/Module2/final/nodejs"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
+    directory: "/Labs/Module2/final/php"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
+    directory: "/Labs/Module2/final/python"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
+    directory: "/Labs/Module2/final/ruby"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
+    directory: "/Labs/Module3/Multicontainers/client"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
+    directory: "/Labs/Module3/Multicontainers/server"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
+    directory: "/resources/runtimes/dotnetcore"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
+    directory: "/resources/runtimes/go"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
+    directory: "/resources/runtimes/java/docker"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
+    directory: "/resources/runtimes/nodejs"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
+    directory: "/resources/runtimes/php"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker"
     directory: "/resources/runtimes/python"
     schedule:
       interval: "weekly"
 
+  - package-ecosystem: "docker"
+    directory: "/resources/runtimes/ruby"
+    schedule:
+      interval: "weekly"
 
- 
+  - package-ecosystem: "github-actions"
+    directory: "/.github/workflows"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "maven"
+    directory: "/Labs/Module2/final/java/code"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "maven"
+    directory: "/resources/runtimes/java/code"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "npm"
+    directory: "/Labs/Module2/final/nodejs"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "npm"
+    directory: "/Labs/Module3/Multicontainers/client"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "npm"
+    directory: "/Labs/Module3/Multicontainers/server"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "npm"
+    directory: "/resources/runtimes/nodejs"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "nuget"
+    directory: "/Labs/Module2/final/dotnetcore/code"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "nuget"
+    directory: "/resources/runtimes/dotnetcore/code"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "pip"
+    directory: "/Labs/Module2/final/python"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "pip"
+    directory: "/resources/runtimes/python"
+    schedule:
+      interval: "weekly"
