@@ -1,4 +1,4 @@
-FROM node:12.18
+FROM node:25.9
 
 RUN mkdir /app
 
