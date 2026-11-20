@@ -1,4 +1,4 @@
-FROM node:26.12
+FROM node:26.13
 RUN mkdir /server
 WORKDIR /server
 COPY package.json /server/
